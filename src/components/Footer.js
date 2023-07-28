@@ -40,7 +40,7 @@ export default function Footer() {
                     align="center"
                     color="white"
                     component="p">
-                    For any further queries, kindly contact the UAM team via UAM@ihis.com.sg
+                    For any further queries, kindly contact the UAM team via UAM@synapxe.sg
                 </Typography>
         </Box>
     );

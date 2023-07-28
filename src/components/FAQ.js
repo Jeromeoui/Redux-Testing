@@ -2,6 +2,7 @@ import PageHeader from "./PageHeader";
 import QnA from "./QnA";
 import { Category } from "./QnA";
 import Picture from './assets/Blue7.jpg'
+import FeedbackForm from "./FeedbackForm";
 
 export default function FAQ() {
     const qData = [
@@ -59,6 +60,7 @@ export default function FAQ() {
             <QnA data={qData}/>
             <Category name='Users'/>
             <QnA data={qData2}/>
+            <FeedbackForm/>
         </div>
     );
 }

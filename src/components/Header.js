@@ -30,12 +30,16 @@ export default function SearchAppBar() {
   const isWindowMaximized = useMediaQuery('(min-width: 960px)');
   const isXlScreen = useMediaQuery('(min-width: 1920px)');
 
+
+
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar 
+        color="primary"
         position="fixed"
+        style={{ "background-image": "linear-gradient(to right, #280191, #021a78)" }}
         sx={{
-          backgroundColor: '#0d47a1', 
+          // backgroundColor: '#0d47a1', 
           zIndex: (theme) => theme.zIndex.drawer + 1,
           height: '56px',
         }} >
@@ -112,7 +116,6 @@ export default function SearchAppBar() {
               >
                 {page.title}
               </Button>
-              // </NavLink>
             ))}
           </Box>
           </Grid>
