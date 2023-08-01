@@ -3,11 +3,13 @@ import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import ButtonBase from '@mui/material/ButtonBase';
 import Typography from '@mui/material/Typography';
-import { useEffect, useState } from 'react';;
+import { useEffect, useState } from 'react';
+import Picture from './assets/Blue1.jpg'
 
 const images = [
   {
-    url: require('./assets/Blue1.jpg'),
+    // url: require('./assets/Blue1.jpg'),
+    url: Picture,
     title: 'Welcome to the User Access Management (UAM) Site',
     width: '40%',
   },
