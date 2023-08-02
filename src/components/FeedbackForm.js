@@ -7,9 +7,39 @@ import { useState, useEffect } from "react";
 
 export default function FeedbackForm(){
 
+    console.log('test'); 
+
+    console.log("Hi")
     const spacebetween = '25px';
     const textfieldcolor = '#160052';
     const [Barlength, setBarLength] = useState((window.innerWidth)*2/3);
+    // const [Textfiller1, setText1] = useState("");
+    // const [Textfiller2, setText2] = useState("");
+    // const [Textfiller3, setText3] = useState("");
+    // const [Textfiller4, setText4] = useState("");
+    const [textFields, setTextFields] = useState({
+        name: "",
+        email: "",
+        subject: "",
+        feedback: "",
+      });
+
+    const handleSubmit = () => {
+        console.log(textFields);
+    };
+
+    function handleInputChange(event){
+        const {name, value} = event.target;
+        setTextFields({...textFields, [name]: value});
+    }
+
+    // const handleTextFieldChange = (e) => {
+    //     const { name, value } = e.target;
+    //     setTextFields((prevFields) => ({
+    //       ...prevFields,
+    //       [name]: value,
+    //     }));
+    //   };
 
     useEffect(() => {
         const handleResize = () => {
@@ -33,13 +63,19 @@ export default function FeedbackForm(){
             Leave us your question or feedback here.
             </Typography>     
             </Box>
+            <Box component="form" onSubmit={handleSubmit} noValidate>
             <Box display="flex" flexDirection="column" alignItems="left" sx={{width : Barlength/4}}>   
             <TextField
             required
             id="outlined-name-input"
             label="Name"
+            name="name"
             color="primary"
             sx={{marginBottom: spacebetween}}
+            // defaultValue="test"
+            value={textFields.name}
+            onChange={handleInputChange}
+            autoFocus
             />
             </Box>
             <Box display="flex" flexDirection="column" alignItems="left" sx={{width : Barlength/4}}>
@@ -47,7 +83,11 @@ export default function FeedbackForm(){
             required
             id="outlined-email-input"
             label="Email"
+            name="email"
             sx={{marginBottom: spacebetween}}
+            // defaultValue={Textfiller}
+            value={textFields.email}
+            onChange={handleInputChange}
             />
             </Box>
             <Box display="flex" flexDirection="column" alignItems="left" sx={{width : Barlength*3/4}}>
@@ -55,7 +95,11 @@ export default function FeedbackForm(){
             required
             id="outlined-subject-input"
             label="Subject"
+            name="subject"
             sx={{marginBottom: spacebetween}}
+            // defaultValue={Textfiller}
+            value={textFields.subject}
+            onChange={handleInputChange}
             />
             </Box>
             <Box display="flex" flexDirection="column" alignItems="left" sx={{width : Barlength}}>
@@ -63,12 +107,19 @@ export default function FeedbackForm(){
             required
             id="outlined-multiline-static"
             label="Question/Feedback"
+            name="feedback"
             multiline
             rows={4}
             sx={{marginBottom: spacebetween}}
+            // defaultValue={Textfiller}
+            value={textFields.feedback}
+            onChange={handleInputChange}
             />
             </Box>
-            <Button variant="contained" endIcon={<SendIcon />}>
+            </Box>
+            <Button variant="contained" endIcon={<SendIcon />}
+                // onClick={() => setTextFields("")}
+            >
                 Submit
             </Button>
         </Box>

@@ -36,7 +36,7 @@ export default function SearchAppBar() {
       <AppBar 
         color="primary"
         position="fixed"
-        style={{ "background-image": "linear-gradient(to right, #280191, #021a78)" }}
+        style={{ backgroundImage: "linear-gradient(to right, #28019f, #021a78)" }}
         sx={{
           // backgroundColor: '#0d47a1', 
           zIndex: (theme) => theme.zIndex.drawer + 1,
