@@ -13,22 +13,22 @@ namespace API.Controllers
     [Route("api/[controller]")]
     public class QuestionsController : ControllerBase
     {
-        private readonly QuestionContext context;
+        private readonly QuestionContext _context;
         public QuestionsController(QuestionContext context)
         {
-            this.context = context;
+            _context = context;
         }
 
         [HttpGet]
         public async Task<ActionResult<List<Question>>> GetQuestions()
         {
-            return await context.Questions.ToListAsync();
+            return await _context.Questions.ToListAsync();
         }
 
         [HttpGet("{id}")]
         public async Task<ActionResult<Question>> GetQuestion(int id)
         {
-            return await context.Questions.FindAsync(id);
+            return await _context.Questions.FindAsync(id);
         }
     }
 }
