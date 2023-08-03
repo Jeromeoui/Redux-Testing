@@ -5,11 +5,12 @@ using System.Threading.Tasks;
 
 namespace API.Entities
 {
-    public class questions
+    public class Question
     {
-        public string name { get; set; }
-        public string email { get; set; }
-        public string subject { get; set; }
-        public string question { get; set; }
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Email { get; set; }
+        public string Subject { get; set; }
+        public string Query { get; set; }
     }
 }

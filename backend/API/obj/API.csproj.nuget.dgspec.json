@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\zhero\\Desktop\\Jerome\\ucla\\Academics\\Internships\\1-Summer 2023 IHiS\\reduxtest\\Redux-Testing\\backend\\API\\API.csproj": {}
+    "C:\\Users\\zhero\\Desktop\\Jerome\\UCLA\\Academics\\Internships\\1-Summer 2023 IHiS\\reduxtest\\Redux-Testing\\backend\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\zhero\\Desktop\\Jerome\\ucla\\Academics\\Internships\\1-Summer 2023 IHiS\\reduxtest\\Redux-Testing\\backend\\API\\API.csproj": {
+    "C:\\Users\\zhero\\Desktop\\Jerome\\UCLA\\Academics\\Internships\\1-Summer 2023 IHiS\\reduxtest\\Redux-Testing\\backend\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zhero\\Desktop\\Jerome\\ucla\\Academics\\Internships\\1-Summer 2023 IHiS\\reduxtest\\Redux-Testing\\backend\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\zhero\\Desktop\\Jerome\\UCLA\\Academics\\Internships\\1-Summer 2023 IHiS\\reduxtest\\Redux-Testing\\backend\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\zhero\\Desktop\\Jerome\\ucla\\Academics\\Internships\\1-Summer 2023 IHiS\\reduxtest\\Redux-Testing\\backend\\API\\API.csproj",
+        "projectPath": "C:\\Users\\zhero\\Desktop\\Jerome\\UCLA\\Academics\\Internships\\1-Summer 2023 IHiS\\reduxtest\\Redux-Testing\\backend\\API\\API.csproj",
         "packagesPath": "C:\\Users\\zhero\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zhero\\Desktop\\Jerome\\ucla\\Academics\\Internships\\1-Summer 2023 IHiS\\reduxtest\\Redux-Testing\\backend\\API\\obj\\",
+        "outputPath": "C:\\Users\\zhero\\Desktop\\Jerome\\UCLA\\Academics\\Internships\\1-Summer 2023 IHiS\\reduxtest\\Redux-Testing\\backend\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\zhero\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -40,6 +40,16 @@
           "targetAlias": "net7.0",
           "dependencies": {
             "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[7.0.9, )"
             },
